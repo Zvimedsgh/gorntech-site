@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GorenTech – אפליקציות בהתאמה אישית | צבי גורן</title>
+<meta name="description" content="בניית יישומים לטלפון ולמחשב לפי הזמנה – לעסקים קטנים ולשימוש אישי. פגישת אפיון ראשונה ללא עלות. צבי גורן, 054-6677396.">
+<meta property="og:title" content="GorenTech – אבנה לך אפליקציה בדיוק לפי הצורך">
+<meta property="og:description" content="יישומים פשוטים ונוחים לטלפון ולמחשב, בעברית, בהתאמה אישית מלאה.">
+<meta property="og:image" content="https://gorentech.co.il/ad.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230E2F4A'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%23FF8A4C' font-family='Arial' font-weight='bold'>G</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E2F4A; --navy-2:#16466B; --cream:#FFF6EC; --mist:#D6E4F0;
+  --orange:#FF8A4C; --orange-ink:#C2521B; --mint:#4FD1A5; --mint-ink:#1F7A5C;
+  --sun:#FFD66B; --ink:#0E2F4A; --muted:#5A6B7B;
+  --display:'Rubik','Arial Hebrew',Arial,sans-serif;
+  --body:'Assistant','Arial Hebrew',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--cream);font-size:18px;line-height:1.6;
+  padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+
+/* hero */
+.hero{background:var(--navy);color:var(--cream);padding:calc(env(safe-area-inset-top,0px) + 22px) 0 64px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:var(--navy-2);left:-220px;top:180px}
+.top{display:flex;justify-content:space-between;align-items:center;position:relative}
+.brand{font-family:var(--display);font-weight:700;font-size:24px;letter-spacing:.5px}
+.top a.call{font-weight:700;text-decoration:none;background:var(--sun);color:var(--navy);padding:8px 18px;border-radius:999px;direction:ltr}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:center;margin-top:48px;position:relative}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,7vw,72px);line-height:1.08;margin:0 0 20px}
+h1 span{color:var(--orange);display:block}
+.lead{font-size:clamp(19px,2.4vw,24px);color:var(--mist);max-width:34ch;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:14px;font-weight:700;font-size:19px;text-decoration:none}
+.btn-main{background:var(--orange);color:#1A0E06}
+.btn-ghost{border:2px solid var(--mist);color:var(--cream)}
+.btn svg{width:22px;height:22px;flex-shrink:0}
+
+/* phone */
+.phone{width:270px;border:10px solid var(--cream);border-radius:42px;background:#fff;padding:18px 14px;display:flex;flex-direction:column;gap:10px;color:var(--ink);position:relative}
+.phone::before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:var(--orange);top:-60px;left:-60px;z-index:-1}
+.notch{width:70px;height:7px;border-radius:4px;background:#C9D3DC;align-self:center}
+.ph-head{display:flex;justify-content:space-between;align-items:center}
+.ph-head b{font-family:var(--display);font-size:21px}
+.ph-head small{color:var(--muted);font-size:14px}
+.appt{border-radius:14px;padding:9px 12px;display:flex;justify-content:space-between;align-items:center;line-height:1.3}
+.appt b{display:block;font-size:16px}.appt small{color:var(--muted);font-size:13px}
+.appt time{font-weight:700;direction:ltr}
+.a1{background:#FFE9DD}.a1 time{color:var(--orange-ink)}
+.a2{background:#DDF6EE}.a2 time{color:var(--mint-ink)}
+.a3{background:#FFF3CF}.a3 time{color:#8A6A12}
+.a4{background:#E3ECF5}.a4 time{color:var(--navy-2)}
+.ph-note{font-size:13px;color:var(--mint-ink);font-weight:600}
+.ph-btn{height:44px;border-radius:22px;background:var(--orange);display:flex;align-items:center;justify-content:center;font-weight:700}
+
+/* sections */
+section{padding:72px 0}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.4vw,44px);line-height:1.15;margin:0 0 12px}
+.sub{color:var(--muted);margin:0 0 36px;max-width:60ch}
+.uses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.use{background:#fff;border-radius:18px;padding:24px;border-top:6px solid var(--c)}
+.use h3{font-family:var(--display);font-size:22px;margin:0 0 8px}
+.use p{margin:0;color:var(--muted)}
+
+.how{background:var(--navy);color:var(--cream)}
+.how .sub{color:var(--mist)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-top:64px}
+.steps li::before{content:counter(s);position:absolute;top:0;right:0;width:48px;height:48px;border-radius:50%;background:var(--sun);color:var(--navy);font-family:var(--display);font-weight:800;font-size:24px;display:grid;place-items:center}
+.steps h3{font-family:var(--display);font-size:21px;margin:0 0 6px}
+.steps p{margin:0;color:var(--mist)}
+
+.prices{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;min-width:560px}
+th,td{padding:16px 18px;text-align:right;border-bottom:1px solid #EDE3D6}
+th{background:var(--sun);font-family:var(--display);font-size:17px}
+td:last-child{font-weight:700;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.fine{font-size:15px;color:var(--muted);margin-top:14px}
+
+.contact{background:var(--orange);color:#1A0E06;text-align:center}
+.contact .sub{color:#3A1C0B;margin-inline:auto}
+.contact .ctas{justify-content:center}
+.contact .btn-main{background:var(--navy);color:var(--cream)}
+.contact .btn-ghost{border-color:#1A0E06;color:#1A0E06}
+footer{background:var(--navy);color:var(--mist);padding:28px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .phone{justify-self:center;margin-top:12px}
+  .uses{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:480px){.steps{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">GorenTech</div>
+      <a class="call" href="https://wa.me/972546677396?text=%D7%94%D7%99%D7%99%20%D7%A6%D7%91%D7%99%2C%20%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A8%D7%A2%D7%99%D7%95%D7%9F%20%D7%9C%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94">וואטסאפ</a>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>יש לך רעיון?<span>אבנה לך אפליקציה</span>בדיוק לפי הצורך</h1>
+        <p class="lead">יישומים פשוטים ונוחים לטלפון ולמחשב, בעברית, בהתאמה אישית מלאה. בלי צורך בחנות אפליקציות – עובד בכל טלפון.</p>
+        <div class="ctas">
+          <a class="btn btn-main" href="https://wa.me/972546677396?text=%D7%94%D7%99%D7%99%20%D7%A6%D7%91%D7%99%2C%20%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A8%D7%A2%D7%99%D7%95%D7%9F%20%D7%9C%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
+            שלחו הודעה בוואטסאפ
+          </a>
+          <a class="btn btn-ghost" href="mailto:zvi@gorentech.co.il">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 6 9-6"/></svg>
+            שלחו מייל
+          </a>
+        </div>
+      </div>
+      <div class="phone" aria-label="דוגמה: אפליקציה לניהול תורים">
+        <div class="notch"></div>
+        <div class="ph-head"><b>התורים שלי</b><small>היום</small></div>
+        <div class="appt a1"><div><b>דנה כהן</b><small>תספורת + צבע</small></div><time>09:00</time></div>
+        <div class="appt a2"><div><b>יוסי לוי</b><small>תספורת גבר</small></div><time>10:30</time></div>
+        <div class="appt a3"><div><b>מיכל אברהם</b><small>פן</small></div><time>12:00</time></div>
+        <div class="appt a4"><div><b>רונית שמש</b><small>עיצוב גבות</small></div><time>14:30</time></div>
+        <div class="ph-note">✓ תזכורת נשלחה ללקוחות</div>
+        <div class="ph-btn">+ תור חדש</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>מה אפשר לבנות?</h2>
+      <p class="sub">כל דבר שהיום מנוהל באקסל, בפתקים או בראש. כמה דוגמאות:</p>
+      <div class="uses">
+        <div class="use" style="--c:var(--orange)"><h3>לעסק קטן</h3><p>ניהול תורים ולקוחות, מעקב הזמנות, תזכורות אוטומטיות ללקוחות.</p></div>
+        <div class="use" style="--c:var(--mint)"><h3>לבית ולמשפחה</h3><p>מעקב הוצאות, חלוקת משימות, תזכורות לתרופות ולטיפולים.</p></div>
+        <div class="use" style="--c:var(--sun)"><h3>לנכס או לוועד</h3><p>ניהול דירת נופש, ניקיונות ותקלות, גביית ועד בית, רישום לחוגים.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="wrap">
+      <h2>איך זה עובד</h2>
+      <p class="sub">תהליך פשוט, בלי הפתעות במחיר.</p>
+      <ol class="steps">
+        <li><h3>פגישת אפיון</h3><p>מספרים לי מה צריך. הפגישה הראשונה ללא עלות.</p></li>
+        <li><h3>הצעת מחיר</h3><p>מסמך קצר: מה היישום יעשה וכמה זה עולה.</p></li>
+        <li><h3>גרסת ניסיון</h3><p>מנסים בטלפון, ואני מתקן לפי ההערות.</p></li>
+        <li><h3>מסירה ותמיכה</h3><p>היישום שלכם, עם תחזוקה ותיקונים לפי הצורך.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>מחירים</h2>
+      <p class="sub">טווחי מחיר לדוגמה. המחיר הסופי נקבע אחרי פגישת האפיון.</p>
+      <div class="prices">
+        <table>
+          <thead><tr><th>חבילה</th><th>מה כולל</th><th>מחיר</th></tr></thead>
+          <tbody>
+            <tr><td>בסיסי</td><td>1–3 מסכים, הנתונים נשמרים במכשיר</td><td>600–1,200 ₪</td></tr>
+            <tr><td>מתקדם</td><td>סנכרון בין מכשירים, תזכורות, הדפסה</td><td>1,500–3,000 ₪</td></tr>
+            <tr><td>עסקי</td><td>ניהול לקוחות או תורים, כמה משתמשים</td><td>3,500–6,000 ₪</td></tr>
+            <tr><td>תחזוקה</td><td>אחסון, גיבוי ותיקונים</td><td>50–150 ₪ לחודש</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">[לעדכן: המחירים כוללים / לא כוללים מע״מ]</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>בואו נדבר על הרעיון שלכם</h2>
+      <p class="sub">פגישת אפיון ראשונה ללא עלות וללא התחייבות. הפנייה בוואטסאפ או במייל, ואחזור אליכם.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="https://wa.me/972546677396?text=%D7%94%D7%99%D7%99%20%D7%A6%D7%91%D7%99%2C%20%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A8%D7%A2%D7%99%D7%95%D7%9F%20%D7%9C%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94">שלחו הודעה בוואטסאפ</a>
+        <a class="btn btn-ghost" href="mailto:zvi@gorentech.co.il">zvi@gorentech.co.il</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>צבי גורן | GorenTech</span><span>פרדס חנה–כרכור</span></div>
+</footer>
+</body>
+</html>
